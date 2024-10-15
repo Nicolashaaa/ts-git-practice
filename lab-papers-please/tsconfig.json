@@ -4,7 +4,7 @@
       "module": "commonjs",
       "strict": true,
       "esModuleInterop": true,
-      "outDir": "./src/main/resources/output"
+      "outDir": "./src/main/TypeScript/dist"
   },
   "include": [
       "src/**/*"
