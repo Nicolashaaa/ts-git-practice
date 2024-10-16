@@ -1,21 +1,16 @@
-// main.ts
-import { Individual } from './Individual';
+import { FileReader } from './FileReader.js';
 
 function main() {
-    // Создание экземпляров класса Creature
-    const creature1 = new Individual(1, false, "Asgard", 200, ["small", "red"]);
-    const creature2 = new Individual(2, true, "Kashyyyk", 16, ["intelligent", "blue-eyed"]);
+// Создание экземпляра FileReader
+const filePath = '../resources/input.json'; // Используем относительный путь
+const fileReader = new FileReader(filePath);
 
-    // Печать информации о существах
-    const creatures = [creature1, creature2];
-    creatures.forEach(creature => {
-        creature.printInfo();
-    });
-
-    // Создание копии creature2 с изменением id и isHumanoid
-    const creature3 = creature2.copy(3, false);
-    creature3.printInfo();
-    creature3.greet();
+// Вызов методов
+fileReader.readFile();
+const jsonData = fileReader.parseJson();
+if (jsonData) {
+    console.log("Parsed JSON Data:", jsonData);
+    }
 }
 
 main();
