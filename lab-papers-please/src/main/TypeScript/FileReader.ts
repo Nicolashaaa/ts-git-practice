@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import * as path from 'path';
 
 export class FileReader {
     private filePath: string;
@@ -20,10 +19,11 @@ export class FileReader {
     public parseJson(): any {
         try {
             const fileContent = fs.readFileSync(this.filePath, 'utf-8');
-            return JSON.parse(fileContent);
+            const jsonData = JSON.parse(fileContent); // Парсим JSON
+            return jsonData.data; // Возвращаем только массив из поля data
         } catch (error) {
             console.error("Error parsing JSON:", error);
-            return null;
+            return null; // Если парсинг не удался, возвращаем null
         }
     }
 }

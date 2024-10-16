@@ -1,4 +1,12 @@
 // Individual.ts
+export interface IndividualProps {
+    id: number;
+    isHumanoid?: boolean;
+    planet?: string;
+    age?: number;
+    traits?: string[];
+}
+
 export class Individual {
     // Приватные свойства
     private id: number;
@@ -8,7 +16,7 @@ export class Individual {
     private traits: string[];
 
     // Конструктор для инициализации свойств
-    constructor(id: number, isHumanoid: boolean, planet: string, age: number, traits: string[]) {
+    constructor({ id, isHumanoid, planet, age, traits }: IndividualProps) {
         this.id = id;
         this.isHumanoid = isHumanoid;
         this.planet = planet;
@@ -17,41 +25,59 @@ export class Individual {
     }
 
     // Getter методы
-    getId(): number {
+    public getId(): number {
         return this.id;
     }
 
-    getIsHumanoid(): boolean {
+    public getIsHumanoid(): boolean {
         return this.isHumanoid;
     }
 
-    getPlanet(): string {
+    public getPlanet(): string {
         return this.planet;
     }
 
-    getAge(): number {
+    public getAge(): number {
         return this.age;
     }
 
-    getTraits(): string[] {
+    public getTraits(): string[] {
         return this.traits;
     }
 
     // Методы
-    greet(): void {
-        console.log(`Hello! I am creature No. ${this.id}`);
-    }
 
-    printInfo(): void {
-        console.log(`Creature: ${this.id}`);
-        console.log(`Is Humanoid? ${this.isHumanoid}`);
-        console.log(`It is from ${this.planet}`);
-        console.log(`It is ${this.age} years old`);
-        console.log(`It has traits: ${this.traits.join(', ')}`);
+    // public printInfo(): void {
+    //     console.log(`Is Humanoid? ${this.isHumanoid !== undefined ? this.isHumanoid : 'N/A'}`); // Проверяем на undefined
+    //     console.log(`It is from ${this.planet !== undefined ? this.planet : 'N/A'}`); // Проверяем на undefined
+    //     console.log(`It is ${this.age !== undefined ? this.age : 'N/A'} years old`); // Проверяем на undefined
+    //     console.log(`It has traits: ${this.traits ? this.traits.join(', ') : 'None'}`); // Проверяем на наличие traits
+    // }
+
+    public printInfo(): void {
+        
+        // Проверяем и выводим только если свойство задано
+        if (this.isHumanoid !== undefined) {
+            console.log(`Is Humanoid? ${this.isHumanoid}`);
+        }
+        
+        if (this.planet !== undefined) {
+            console.log(`It is from ${this.planet}`);
+        }
+        
+        if (this.age !== undefined) {
+            console.log(`It is ${this.age} years old`);
+        }
+        
+        if (this.traits) {
+            console.log(`It has traits: ${this.traits.join(', ')}`);
+        } else {
+            console.log(`It has traits: None`);
+        }
     }
 
     // Метод для создания копии
-    copy(newId: number, newIsHumanoid: boolean): Individual {
-        return new Individual(newId, newIsHumanoid, this.planet, this.age, this.traits);
+    public copy(newId: number, newIsHumanoid: boolean): Individual {
+        return new Individual({ id: newId, isHumanoid: newIsHumanoid, planet: this.planet, age: this.age, traits: this.traits });
     }
 }
