@@ -13,35 +13,7 @@
       ]
     },
     {
-      "id": 3,
-      "universe": "Star Wars",
-      "character": "Wookie",
-      "isHumanoid": false,
-      "age": 253,
-      "traits": [
-        "HAIRY",
-        "TALL"
-      ]
-    },
-    {
-      "id": 4,
-      "universe": "Star Wars",
-      "character": "Ewok",
-      "planet": "Earth",
-      "traits": [
-        "SHORT",
-        "BULKY"
-      ]
-    },
-    {
-      "id": 10,
-      "universe": "Star Wars",
-      "character": "Ewok",
-      "planet": "Endor",
-      "traits": []
-    },
-    {
-      "id": 12,
+      "id": 1,
       "universe": "Star Wars",
       "character": "Ewok",
       "isHumanoid": false,
@@ -53,7 +25,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 7,
       "universe": "Star Wars",
       "character": "Wookie",
       "planet": "Kashyyyk",
@@ -64,13 +36,29 @@
       ]
     },
     {
-      "id": 20,
+      "id": 8,
       "universe": "Star Wars",
       "character": "Ewok",
       "isHumanoid": false,
       "planet": "Endor",
-      "age": 22,
-      "traits": []
+      "age": 22
+    },
+    {
+      "id": 14,
+      "universe": "Star Wars",
+      "character": "Wookie",
+      "isHumanoid": false,
+      "age": 253,
+      "traits": [
+        "HAIRY",
+        "TALL"
+      ]
+    },
+    {
+      "id": 15,
+      "universe": "Star Wars",
+      "character": "Ewok",
+      "planet": "Endor"
     }
   ]
 }

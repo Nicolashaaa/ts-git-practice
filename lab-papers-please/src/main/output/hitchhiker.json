@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "id": 1,
+      "id": 3,
       "universe": "Hitchhiker's Universe",
       "character": "Betelgeusian",
       "isHumanoid": true,
@@ -13,29 +13,25 @@
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "universe": "Hitchhiker's Universe",
       "character": "Vogon",
       "isHumanoid": false,
+      "planet": "Vogsphere",
+      "age": 128,
       "traits": [
+        "GREEN",
         "BULKY"
       ]
     },
     {
-      "id": 6,
+      "id": 10,
       "universe": "Hitchhiker's Universe",
       "character": "Betelgeusian",
-      "age": 26,
+      "planet": "Betelgeuse",
+      "age": 45,
       "traits": [
-        "EXTRA_ARMS"
-      ]
-    },
-    {
-      "id": 8,
-      "universe": "Hitchhiker's Universe",
-      "character": "Betelgeusian",
-      "age": 82,
-      "traits": [
+        "EXTRA_ARMS",
         "EXTRA_HEAD"
       ]
     },
@@ -50,14 +46,20 @@
       ]
     },
     {
-      "id": 16,
+      "id": 17,
+      "universe": "Hitchhiker's Universe",
+      "character": "Betelgeusian",
+      "age": 26,
+      "traits": [
+        "EXTRA_ARMS"
+      ]
+    },
+    {
+      "id": 18,
       "universe": "Hitchhiker's Universe",
       "character": "Vogon",
       "isHumanoid": false,
-      "planet": "Vogsphere",
-      "age": 128,
       "traits": [
-        "GREEN",
         "BULKY"
       ]
     },
@@ -65,10 +67,8 @@
       "id": 21,
       "universe": "Hitchhiker's Universe",
       "character": "Betelgeusian",
-      "planet": "Betelgeuse",
-      "age": 45,
+      "age": 82,
       "traits": [
-        "EXTRA_ARMS",
         "EXTRA_HEAD"
       ]
     }

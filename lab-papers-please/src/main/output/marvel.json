@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "id": 7,
+      "id": 2,
       "universe": "Marvel",
       "character": "Asgardian",
       "isHumanoid": true,
@@ -13,30 +13,7 @@
       ]
     },
     {
-      "id": 15,
-      "universe": "Marvel",
-      "character": "Asgardian",
-      "isHumanoid": true,
-      "planet": "Earth",
-      "age": 451,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 17,
-      "universe": "Marvel",
-      "character": "Asgardian",
-      "isHumanoid": true,
-      "age": 154,
-      "traits": [
-        "BLONDE",
-        "TALL"
-      ]
-    },
-    {
-      "id": 18,
+      "id": 9,
       "universe": "Marvel",
       "character": "Asgardian",
       "isHumanoid": true,
@@ -47,15 +24,14 @@
       ]
     },
     {
-      "id": 19,
+      "id": 16,
       "universe": "Marvel",
       "character": "Asgardian",
       "isHumanoid": true,
-      "planet": "Earth",
-      "age": 451,
+      "age": 154,
       "traits": [
         "BLONDE",
-        "POINTY_EARS"
+        "TALL"
       ]
     }
   ]

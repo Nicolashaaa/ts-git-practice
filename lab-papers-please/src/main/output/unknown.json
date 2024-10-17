@@ -1,0 +1,15 @@
+{
+  "characters": [
+    {
+      "id": 22,
+      "universe": "Unknown",
+      "character": "Unknown"
+    },
+    {
+      "id": 23,
+      "universe": "Unknown",
+      "character": "Unknown",
+      "age": 321
+    }
+  ]
+}

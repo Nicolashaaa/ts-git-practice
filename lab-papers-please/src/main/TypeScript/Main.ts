@@ -38,39 +38,41 @@ function main() {
     const marvelCharacters = [];
     const hitchhikerCharacters = [];
     const lotrCharacters = [];
+    const unknownCharacters = [];
 
-    // Классификация и группировка индивидуумов по вселенным
-    individualsMap.forEach((individual: Individual) => {
-        const classification = classifier.classify(individual); // Классифицируем индивидуум
-        if (classification) {
-            const characterData = {
-                id: individual.getId(),
-                universe: classification.universe,
-                character: classification.character,
-                // Добавляем все характеристики индивидума
-                isHumanoid: individual.getIsHumanoid(),
-                planet: individual.getPlanet(),
-                age: individual.getAge(),
-                traits: individual.getTraits() || [] // Включаем traits, если они есть
-            };
+   // Классификация и группировка индивидуумов по вселенным
+individualsMap.forEach((individual) => {
+    const classification = classifier.classify(individual); // Классифицируем индивидуум
+    const characterData = {
+        id: individual.getId(),
+        universe: classification?.universe || "Unknown",
+        character: classification?.character || "Unknown",
+        // Добавляем все характеристики индивидума
+        isHumanoid: individual.getIsHumanoid(),
+        planet: individual.getPlanet(),
+        age: individual.getAge(),
+        traits: individual.getTraits() // Включаем traits, если они есть
+    };
 
-            // Добавляем персонажа в соответствующий массив
-            switch (classification.universe) {
-                case Universe.STAR_WARS:
-                    starWarsCharacters.push(characterData);
-                    break;
-                case Universe.MARVEL:
-                    marvelCharacters.push(characterData);
-                    break;
-                case Universe.HITCHHIKER:
-                    hitchhikerCharacters.push(characterData);
-                    break;
-                case Universe.LORD_OF_THE_RINGS:
-                    lotrCharacters.push(characterData);
-                    break;
-            }
-        }
-    });
+    // Добавляем персонажа в соответствующий массив
+    switch (classification?.universe) {
+        case Universe.STAR_WARS:
+            starWarsCharacters.push(characterData);
+            break;
+        case Universe.MARVEL:
+            marvelCharacters.push(characterData);
+            break;
+        case Universe.HITCHHIKER:
+            hitchhikerCharacters.push(characterData);
+            break;
+        case Universe.LORD_OF_THE_RINGS:
+            lotrCharacters.push(characterData);
+            break;
+        case Universe.UNKNOWN:
+            unknownCharacters.push(characterData); // Добавляем в массив "Unknown"
+            break;
+    }
+});
 
     // Путь к директории для записи
     const outputDir = '../output/';
@@ -85,6 +87,8 @@ function main() {
     fs.writeFileSync(path.join(outputDir, 'marvel.json'), JSON.stringify({ characters: marvelCharacters }, null, 2));
     fs.writeFileSync(path.join(outputDir, 'hitchhiker.json'), JSON.stringify({ characters: hitchhikerCharacters }, null, 2));
     fs.writeFileSync(path.join(outputDir, 'lotr.json'), JSON.stringify({ characters: lotrCharacters }, null, 2));
+    fs.writeFileSync(path.join(outputDir, 'unknown.json'), JSON.stringify({ characters: unknownCharacters }, null, 2)); 
+
 
     console.log(`Results have been written to ${outputDir}`);
 }

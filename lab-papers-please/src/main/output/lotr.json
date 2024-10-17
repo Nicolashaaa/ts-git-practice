@@ -5,12 +5,15 @@
       "universe": "Lord of the Rings",
       "character": "Dwarf",
       "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
       "traits": [
-        "BULKY"
+        "BLONDE",
+        "POINTY_EARS"
       ]
     },
     {
-      "id": 9,
+      "id": 6,
       "universe": "Lord of the Rings",
       "character": "Dwarf",
       "isHumanoid": true,
@@ -20,6 +23,57 @@
         "SHORT",
         "BULKY"
       ]
+    },
+    {
+      "id": 12,
+      "universe": "Lord of the Rings",
+      "character": "Elf",
+      "isHumanoid": true,
+      "age": 7523
+    },
+    {
+      "id": 13,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "planet": "Earth",
+      "traits": [
+        "SHORT",
+        "BULKY"
+      ]
+    },
+    {
+      "id": 19,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 20,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "isHumanoid": true,
+      "traits": [
+        "BULKY"
+      ]
+    },
+    {
+      "id": 24,
+      "universe": "Lord of the Rings",
+      "character": "Elf",
+      "age": 121321
+    },
+    {
+      "id": 25,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "isHumanoid": true,
+      "planet": "Earth"
     }
   ]
 }
