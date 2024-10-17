@@ -1,0 +1,25 @@
+{
+  "characters": [
+    {
+      "id": 5,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "isHumanoid": true,
+      "traits": [
+        "BULKY"
+      ]
+    },
+    {
+      "id": 9,
+      "universe": "Lord of the Rings",
+      "character": "Dwarf",
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 124,
+      "traits": [
+        "SHORT",
+        "BULKY"
+      ]
+    }
+  ]
+}

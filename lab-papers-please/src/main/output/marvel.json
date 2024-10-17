@@ -1,0 +1,62 @@
+{
+  "characters": [
+    {
+      "id": 7,
+      "universe": "Marvel",
+      "character": "Asgardian",
+      "isHumanoid": true,
+      "planet": "Asgard",
+      "age": 2034,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 15,
+      "universe": "Marvel",
+      "character": "Asgardian",
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 17,
+      "universe": "Marvel",
+      "character": "Asgardian",
+      "isHumanoid": true,
+      "age": 154,
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 18,
+      "universe": "Marvel",
+      "character": "Asgardian",
+      "isHumanoid": true,
+      "planet": "Asgard",
+      "traits": [
+        "BLONDE",
+        "TALL"
+      ]
+    },
+    {
+      "id": 19,
+      "universe": "Marvel",
+      "character": "Asgardian",
+      "isHumanoid": true,
+      "planet": "Earth",
+      "age": 451,
+      "traits": [
+        "BLONDE",
+        "POINTY_EARS"
+      ]
+    }
+  ]
+}

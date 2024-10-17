@@ -3,7 +3,7 @@ import { Individual } from './Individual';
 
 export enum Universe {
     STAR_WARS = "Star Wars",
-    HITCHHIKER = "Hitchhiker's Guide to the Galaxy",
+    HITCHHIKER = "Hitchhiker's Universe",
     LORD_OF_THE_RINGS = "Lord of the Rings",
     MARVEL = "Marvel"
 }
